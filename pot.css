@@ -1,0 +1,342 @@
+.sidebar {
+    background-color: rgb(192, 191, 191);
+    /* width: 434px; */
+    height: 100vh;
+    transition:.3s ease-in;
+    position: absolute;
+    
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    /* background-color: yellow; */
+    width: 90vw;
+
+}
+
+.container {
+    display: flex;
+
+}
+
+.sidebar nav {
+    padding:44px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 21px;
+    padding:33px;
+
+}
+
+.sidebar nav a {
+    text-decoration: none;
+    color: black;
+
+
+}
+
+.infocontainer {
+    /* background-color: rebeccapurple;  */
+    height: 55vh;
+    width: 80vw;
+    margin: 111px auto;
+    display: flex;
+    justify-content: space-around
+}
+
+ .infocontainerR{
+   
+    height: 55vh;
+    width: 80vw;
+     margin: 69px;
+    margin-left:-1104px; 
+    /* margin:111px auto ; */
+    display: flex;
+    justify-content: space-around;;
+ }
+
+.devpic img {
+    height: 55vh;
+
+}
+
+.devinfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hello {
+    font-size: 51px;
+
+}
+
+.name {
+
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.about {
+    font-size: 27px;
+
+}
+
+.aboutmore {
+    font-size: 21px;
+    margin-top: 13px;
+}
+
+.btn {
+    padding: 9px 14px;
+    border-radius: 23px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size:16px;
+    margin: 14px 7px;
+    cursor: pointer;
+
+}
+
+button {
+
+    padding: 9px 14px;
+    border-radius: 23px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 17px 7px;
+    margin-top: 2.2em;
+    cursor: pointer;
+
+}
+
+button:hover {
+
+    background-color: white;
+    color: dodgerblue;
+
+}
+
+.btn:hover {
+
+    background-color: white;
+    color: dodgerblue;
+}
+
+  .contactform h1{
+
+    font-family:'Times New Roman', Times, serif;
+    padding: 4px 0; 
+     white-space:nowrap;
+
+  
+}
+
+.contactform {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0 33px;
+    margin-top: 83px;
+    margin-right:476px;
+   
+        
+    
+    
+
+
+}
+
+.contactform form div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#emailHelp {
+    font-size: 9px;
+    color: midnightblue;
+    margin: 0 5px;
+    padding: 3px 0 0;
+
+}
+
+.contactform form div input {
+    width: 31vw;
+    border-radius: 7px;
+    margin: 6px 0 0 0;
+    padding: 2px;
+}
+
+#form-check {
+
+    flex-direction: row;
+
+}
+
+#form-check input {
+    width: 23px;
+    margin: 4px 0;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.isclient {
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ 
+
+   }
+  
+    .blogcontainer{
+        margin:7px 0;
+        margin-left:-517px;
+    }
+.blogItem {
+
+    margin: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+h1 {
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 21px;
+
+}
+
+p {
+
+    font-family: monospace;
+}
+.intro{
+    margin-left:-667px;
+}
+
+.intro h2 {
+    font-family: monospace;
+    margin: 12px 12px;
+
+}
+
+.intro p {
+    font-family: monospace;
+    margin: 12px;
+
+}
+
+.skill {
+    width: 251px;
+    height: 6px;
+    background-color: red;
+    border: 2px solid black;
+}
+
+.skillcontainer {
+
+    padding: 12px;
+
+}
+
+.skillItem {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-family: monospace;
+
+}
+
+.hund {
+    width: 267px;
+    background-color: blueviolet;
+}
+
+.fifity {
+    width: 127px;
+    background-color: aqua;
+}
+
+.t5 {
+    width: 75px;
+    background-color: yellow;
+  
+ }
+  
+     @media (max-width:1300px){
+        .infocontainerR {
+    
+         
+                margin-left:32px;
+                 
+             
+      } 
+}  
+ 
+  @media (max-width:677px){
+    .devpic{
+        /* transform: translate(-700px,0);
+        position: absolute; */
+        display: none;
+        
+    } 
+       
+       .intro, .blogcontainer, .contactform{
+
+         margin:51px 9px;
+
+       }
+         /* .infocontainerR{
+            margin: 32px;
+             
+         } */
+      
+       button{
+        font-size:10px;
+        margin-top: 2.2em;
+       }
+      
+      
+       }
+
+       .hamburger{
+        position:absolute;
+        cursor: pointer;
+        top: 10px;
+        left:10px ;
+
+       }
+        
+        .cross{
+            margin-left:219px;
+            margin-top:-21px;
+            
+        }
+         
+          .sidebarGo{
+
+             transform: translate(-443px,0px);
+             position: absolute;
+           
+
+        }
+         
+         .pro{
+            font-size: 33px;
+            display: flex;
+            justify-content: center;
+           margin-top: 21px;
+         }

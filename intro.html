@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pot.css">
+</head>
+<style>
+    #clock{
+        position: relative;
+      
+         background-color:red;
+        height: 40vw;
+        width:40vw;
+        background: url("file:///C:/Users/anshv/Downloads/clck2.png");
+        background-repeat: no-repeat;
+        background-size:100%;
+        : auto;
+    }
+
+    #hour, #minute, #second{
+        position:absolute;
+        background: black;
+        border-radius: 13px;
+    } 
+     #hour{
+         width:7px;
+         height:23%;
+         top:27%;
+         left:49%;
+         opacity:.8;
+         transform-origin: bottom;
+        
+         
+         
+        
+
+      
+       
+     }
+      #minute{
+        width:6px;
+         height:30%;
+         top:19.9%;
+         left:49.3%;
+         opacity: .8;
+         transform-origin: bottom;
+         
+    
+
+        
+         
+       
+       
+         
+         }
+          
+       #second{
+        width:3px;
+         height:35%;
+         top:15%;
+         left:49.9%;
+         opacity:.8;
+         transform-origin: bottom;
+         
+         
+         
+         
+        
+        
+
+       } 
+         .cl{
+
+            position: relative;
+            right: 312px;
+            top: 101px;
+
+         }
+
+       /* #second212{
+           background: black;
+                 width: 25px;         
+                 height: 25px;
+                 position:absolute;
+                 top: 47%;
+                 left: 48%;
+                 border-radius:77px;
+                  
+                   } */ 
+               
+                   
+
+
+        /* Calculator project code */
+
+        html, body{
+          height: 100%;
+          width:100%;
+          font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      .button{
+          padding:7px;
+          margin:0px 0px;
+          width:45px;
+          border: 2px solid black;
+          border-radius:7px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content:center ;
+
+      }
+        .text-center{
+            text-align: center;
+        }
+         /*.bg-red{
+            background-color: red;
+          }
+              */
+
+        
+         .mx-auto{
+             margin: auto;
+
+         }
+      .flex{
+            
+              display: flex;
+       } 
+       .flex-col{
+
+        flex-direction: column;      
+        justify-content:center ;
+        align-items: center;
+        
+         }
+
+         .row{
+             margin: 4px ;
+             width:18vw;
+             
+             display: flex;
+             align-items: center;
+             justify-content:space-around;
+            
+         }
+         
+           .row input{
+             margin:0;
+             padding: 7px ;
+             width: 200px;
+             border: 2px solid black;
+             border-radius: 7px;
+             font-size:19px;
+         }
+
+
+</style>
+<script>
+                //  Clock project code in Js
+                 
+    setInterval(() => {
+    d=new Date();
+    
+    htime=d.getHours();
+    mtime=d.getMinutes();
+    stime=d.getSeconds();
+    hrotation = 30*htime+mtime/2;
+    mrotation = 6*mtime;
+    srotation = 6*stime;
+     
+    hour.style.transform=`rotate(${hrotation}deg)`;
+    minute.style.transform=`rotate(${mrotation}deg)`;
+    second.style.transform=`rotate(${srotation}deg)`;
+
+
+    
+}, 1000);
+
+
+</script>
+ 
+ 
+
+
+          
+    
+ 
+
+                 
+   
+<body>
+    <div class="container">
+    <div class="sidebar sidebarGo">
+       
+        <nav>
+           <ul>
+            <a href="home.html"><li> Home</li></a>
+            <a href="intro.html"><li>My Intro</li></a>
+          <a href="services.html"><li> Services</li></a>
+          <a href="blog.html"><li>Blog</li></a>
+          <a href="contact.html"><li> Contact Me</li></a>
+           </ul> 
+        </nav>
+    </div>
+    <div class="main">
+        <div class="hamburger">
+            <img class="hame" src="hame.png" alt="" width="21px">
+            <img class="cross" src="multi.png" alt="" width="23px">
+ 
+        </div>
+
+    </div>
+        <div class="intro">
+
+            <h1>About me</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga eligendi cum eum, consectetur molestiae exercitationem? Soluta provident tempora, hic laudantium adipisci temporibus ea, repudiandae deserunt eius asperiores distinctio ullam voluptatibus.</p>
+            <h2>My Skills</h2>
+            <div class="skillcontainer">
+                <div class="skillItem">HTML: <div class="skill"></div></div> 
+                <div class="skillItem">CSS: <div class="skill"></div></div> 
+                <div class="skillItem">JavaScript: <div class="skill"></div></div> 
+                <div class="skillItem">C: <div class="skill"></div></div> 
+                <div class="skillItem">C++: <div class="skill"></div></div> 
+                <div class="skillItem">Python: <div class="skill t5"></div></div> 
+
+            </div>
+
+             <!-- TODO: Create a gallery for my project -->
+               
+             
+             
+           <!-- Clock project   -->
+             
+            </div>
+        </div>
+        <div class="pro">
+            <h3>Some of my projects are:</h3>
+            
+             <h2 class="cl"> <br> Clock=></h2>
+            <div id="clock">
+
+                <div id="hour"></div>
+                <div id="minute"></div>
+                <div id="second"></div>
+                <div id="second212"></div>
+                
+            </div>
+
+        </div>
+
+         <!-- Calculator project -->
+         
+         <h1 class="text-center" >Welcome to Calculate me!</h1>
+         <div class="container flex flex-col bg-red mx-auto">
+             <div class="row">
+                 <input class="input" type="text"/>
+             </div>
+             <div class="row">
+                <button class="button">C</button>
+                <button class="button">%</button>
+                <button class="button">M+</button>
+                <button class="button">M-</button>
+            </div>
+             <div class="row">
+                 <button class="button">7</button>
+                 <button class="button">8</button>
+                 <button class="button">9</button>
+                 <button class="button">*</button>
+             </div>
+             <div class="row">
+                <button class="button">4</button>
+                <button class="button">5</button>
+                <button class="button">6</button>
+                <button class="button">/</button>
+            </div>
+            <div class="row">
+                <button class="button">1</button>
+                <button class="button">2</button>
+                <button class="button">3</button>
+                <button class="button">+</button>
+            </div>
+            <div class="row">
+                <button class="button">0</button>
+                <button class="button">.</button>
+                <button class="button">=</button>
+                <button class="button">-</button>
+            </div>
+          
+         </div>
+
+         
+           <h2>Some projects link below:</h2>
+         <a href="file:///C:/Users/anshv/Documents/html/projecnew.html" target="_blank">Web page</a>
+         <br>
+         
+         <a href="file:///C:/Users/anshv/Documents/html/portfolio/ticttacjs/tictac.html" target="_blank">Tic Tac Toe game</a>
+     
+        
+           
+<script src="pot.js">
+        
+             </script>
+
+               <!-- Calculator project -->
+              <script>
+
+        let string="";
+            let buttons =document.querySelectorAll('.button')
+            Array.from(buttons).forEach((button)=> {
+              
+               button.addEventListener('click',(e)=>{
+                   if(e.target.innerHTML=='='){
+                              
+                           string=eval(string);
+                           document.querySelector('input').value=string;
+                   } 
+                   else if(e.target.innerHTML=='C'){
+                              
+                              string="";
+                              document.querySelector('input').value=string;
+                      } 
+                    /*  else if(e.target.innerHTML=='M+'){
+                              
+                              string='0';
+                              document.querySelector('input').value=string;
+                    }  */
+                   else{
+       
+                   console.log(e.target)
+                   string=string+e.target.innerHTML;
+                    document.querySelector('input').value=string;
+       
+                   }
+               })
+                
+            });  
+       
+       
+               
+          </script>
+        
+</script>
+    
+</body>
+</html>
